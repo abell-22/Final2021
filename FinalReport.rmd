@@ -24,7 +24,7 @@ A new  preventative vaccine (covid91) is under test in clinical trials. Given th
 
 # Methods 
 
-The first step is isolating the subpopulations
+The first step is isolating the subpopulations of males, females, LGBTQ, and Drug Users.
 ```{r}
 maledata<- filter(FinalData,sex=="guy")
 maledata$sex <- as.factor(maledata$sex)
