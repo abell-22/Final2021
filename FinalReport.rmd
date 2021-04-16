@@ -6,7 +6,6 @@ output:
   html_document:
     number_sections: true
     toc: true
-
 ---
 
 ```{r include=FALSE,echo=FALSE}
@@ -24,7 +23,7 @@ A new  preventative vaccine (covid91) is under test in clinical trials. Given th
 
 # Methods 
 
-The first step is isolating the subpopulations of males, females, LGBTQ, and Drug Users.
+The first step is isolating the subpopulations of Males, Females, LGBTQ, and DrugUsers.
 
 
 # MALES
@@ -64,7 +63,7 @@ colPerc(table1)
 print(table1)
 ```
 
-The table shows that about 340 males were infected with Covid 19 out of approximately 10,400 males in the study. The table shows that 3.72 % of males who receive the drug got Covid 19, and 2.55% of the males who got the placebo contracted Covid 19. The table also shows, that males that got the vaccine were about 50% more likely to contract Covid 19, this suggest that the vaccine is not effective for males.
+The table shows that about 340 males were infected with Covid-19 out of approximately 10,400 males in the study. The table shows that 3.72 % of males who receive the drug got Covid 19, and 2.55% of the males who got the placebo contracted Covid-19. The table also shows, that males that got the vaccine were about 50% more likely to contract Covid-19, this suggest that the vaccine is not effective for males.
 
 ## Inferential Results
 
@@ -75,8 +74,8 @@ fisher.test(table1)
 ```
 
 The Chi Squared table shows that the P-Value of 0.0006181 is so small that it is highly unlikely that the results are by chance.  
-$H_0$ the null hypothesis given taking the vaccine there is no difference of whether males can contract Covid 19 or not.  
-$H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in whether or not a male contracts Covid 19. Therefore we Reject the Null Hypothesis.
+$H_0$ the null hypothesis given taking the vaccine there is no difference of whether males can contract Covid-19 or not.  
+$H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in whether or not a male contracts Covid-19. Therefore we Reject the Null Hypothesis.
 
 The odds ratio from the Fisher Exact test is 1.47:1, when taking the odds radio and computing it into a percent of effectiveness by using the formula O/(1+O)*100 you get 59.5% effectiveness.
 
@@ -119,7 +118,7 @@ colPerc(table2)
 print(table2)
 ```
 
-The table shows that about 607 Females were infected with Covid 19 out of approximately 9,200 Females in the study. The table also shows that 4.44 % of Females who receive the drug got Covid 19, and 8.67% of the Females who got the placebo contracted Covid 19. Lastly the table shows, that Females that got the vaccine were about 67% less likely to contract Covid 19, this shows that the vaccine is effective for Females.
+The table shows that about 607 Females were infected with Covid-19 out of approximately 9,200 Females in the study. The table also shows that 4.44 % of Females who receive the drug got Covid-19, and 8.67% of the Females who got the placebo contracted Covid-19. Lastly the table shows, that Females that got the vaccine were about 67% less likely to contract Covid-19, this shows that the vaccine is effective for Females.
 
 
 ## Inferential Results
@@ -134,7 +133,7 @@ The Chi Squared table shows that the P-Value of 0.0000000000000002 is so small t
 
 $H_0$ the null hypothesis is that the vaccine makes no difference in the female population when it comes to contracting Covid-19. 
 
-$H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in whether or not a Female contracts Covid 19. 
+$H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in whether or not a Female contracts Covid-19. 
 
 Therefore we Reject the Null Hypothesis.
 
@@ -183,7 +182,7 @@ colPerc(table3)
 print(table3)
 ```
 
-The table shows that about 117 DrugUsers were infected with Covid-19 out of approximately 2,280 DrugUsers in the study. The table also shows that 33.3% of DrugUsers who receive the drug got Covid-19, and 66.6% of the DrugUsers who received the placebo contracted Covid 19. Lastly the table shows, that DrugUsers that got the vaccine were about 60% less likely to contract Covid- 19, this shows that the vaccine is effective for DrugUsers.
+The table shows that about 117 DrugUsers were infected with Covid-19 out of approximately 2,280 DrugUsers in the study. The table also shows that 33.3% of DrugUsers who receive the drug got Covid-19, and 66.6% of the DrugUsers who received the placebo contracted Covid-19. Lastly the table shows, that DrugUsers that got the vaccine were about 60% less likely to contract Covid- 19, this shows that the vaccine is effective for DrugUsers.
 
 ## Inferenial Results
 
@@ -246,7 +245,7 @@ colPerc(table4)
 print(table4)
 ```
 
-The table shows that about 116 LGBTQ were infected with Covid-19 out of approximately 2,040 LGBTQ in the study. The table also shows that 70% of LGBTQ who receive the drug got Covid-19, and 29% of the LGBTQ who received the placebo contracted Covid 19. Lastly the table shows, that LGBTQ that got the vaccine were about 29% more likely to contract Covid- 19, this shows that the vaccine is not effective for the LGBTQ population.
+The table shows that about 116 LGBTQ were infected with Covid-19 out of approximately 2,040 LGBTQ in the study. The table also shows that 70% of LGBTQ who receive the drug got Covid-19, and 29% of the LGBTQ who received the placebo contracted Covid 19. Lastly the table shows, that LGBTQ that got the vaccine were about 29% more likely to contract Covid-19, this shows that the vaccine is not effective for the LGBTQ population.
 
 ## Inferential Results
 
@@ -271,3 +270,4 @@ Ultimately, the vaccine is 29% effective in the LGBTQ population, which is absol
 
 # Discussion & Conclusion
 
+When looking at the 4 populations, we found that the two populations that had the highest rate of effectiveness were the Females at 67% and the DrugUsers at 60%. Both the Male population and the LGBTQ populations showed that the vaccine was not beneficial to them and were ineffective in protecting from contracting Covid-19, the Males had an 40% effectiveness, while the LGBTQ had a 29% effectiveness, which is not at all effective.
